@@ -1,0 +1,50 @@
+# 虚拟环境
+venv/
+env/
+.venv/
+ENV/
+
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter Notebook 检查点
+.ipynb_checkpoints/
+
+# 数据集文件夹（用户通过脚本自行下载）
+data/
+*.jsonl
+*.parquet
+*.csv
+*.tsv
+*.zip
+
+# 模型权重（FinBERT 已托管到 Hugging Face，CRF 的 pkl 可保留）
+best_finbert_risk_model/
+finbert_risk_model/
+checkpoint-*/
+*.bin
+*.safetensors
+*.pth
+*.pt
+*.h5
+*.keras
+
+# 日志文件
+*.log
+
+# IDE 配置
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 操作系统文件
+.DS_Store
+Thumbs.db
+
+# 其他临时文件
+*.tmp
+*.temp
