@@ -77,6 +77,25 @@ ALERT MESSAGE:
 ============================================================
 ```
 
+## 📓 Notebooks
+
+This repository now includes two notebooks:
+
+- `notebooks/Training.ipynb` - training and experimentation for the individual models
+- `notebooks/Pipeline_Error_Analysis.ipynb` - end-to-end system architecture and pipeline error analysis without retraining
+
+The new error-analysis notebook documents the deployed pipeline:
+
+`raw news -> denoising -> classification -> NER -> alert template`
+
+It reuses the trained models and traces representative articles through each stage to answer practical system questions such as:
+
+- Does a denoising mistake suppress a valid alert before classification?
+- Does a classifier error create a false alert or a missed alert?
+- Does an NER failure degrade the final alert by missing affected organizations?
+
+In the current curated examples, the clearest observed propagated error is at the denoising stage: a false negative in the SBERT filter prevents the article from reaching classification and therefore causes a missed downstream alert.
+
 ## ⚙️ Configuration
 
 To suppress verbose warnings and progress bars during model loading, the following environment settings are applied in `scripts/run_demo.py`:
@@ -106,6 +125,8 @@ They are intended only for a cleaner demo output and do not affect the underlyin
 ├── models/                 # Small serialized models (e.g., CRF)
 │   └── crf_org_extractor.pkl
 ├── notebooks/              # Jupyter notebooks for training & experiments
+│   ├── Training.ipynb
+│   └── Pipeline_Error_Analysis.ipynb
 ├── scripts/
 │   ├── run_demo.py         # Interactive demo script
 │   └── evaluate_models.py  # Model comparison script
