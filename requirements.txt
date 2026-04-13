@@ -8,3 +8,6 @@ pyarrow>=8.0.0
 seqeval>=1.2.2
 sklearn-crfsuite>=0.3.6
 joblib>=1.2.0
+requests>=2.31.0
+newspaper3k>=0.2.8
+readability-lxml>=0.8.1

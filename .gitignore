@@ -20,10 +20,13 @@ data/
 *.csv
 *.tsv
 *.zip
+*.gzip
 
-# 模型权重（FinBERT 已托管到 Hugging Face，CRF 的 pkl 可保留）
+# 模型权重（FinBERT 已托管到 Hugging Face，仅保留 CRF 的 pkl）
 best_finbert_risk_model/
+best_finbert_risk_model_v2/
 finbert_risk_model/
+finbert_dapt_combined/
 checkpoint-*/
 *.bin
 *.safetensors
@@ -31,6 +34,13 @@ checkpoint-*/
 *.pt
 *.h5
 *.keras
+
+# 敏感文件（API Token）
+github_token.txt
+openrouter_token.txt
+gemini_token.txt
+nim_token.txt
+.env
 
 # 日志文件
 *.log

@@ -3,7 +3,7 @@ import torch.nn.functional as F
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
 class RiskClassifier:
-    def __init__(self, model_path="xuyifei1234/finbert-risk-classifier", use_local=False):
+    def __init__(self, model_path="xuyifei1234/finbert-risk-classifier-v2", use_local=False):
         self.device = 'cuda' if torch.cuda.is_available() else 'cpu'
         self.tokenizer = AutoTokenizer.from_pretrained(model_path, local_files_only=use_local)
         self.model = AutoModelForSequenceClassification.from_pretrained(model_path, local_files_only=use_local)

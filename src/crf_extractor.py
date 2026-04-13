@@ -7,7 +7,7 @@ class CRFExtractor:
     def __init__(self, crf_path="models/crf_org_extractor.pkl"):
         if os.path.exists(crf_path):
             self.crf = joblib.load(crf_path)
-            print(f"✅ CRF model loaded from {crf_path} ")
+            # print(f"✅ CRF model loaded from {crf_path} ")
         else:
             self.crf = None
             print(f"⚠️ {crf_path} not found, Event Extractor invalid")
