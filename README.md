@@ -1,24 +1,27 @@
 # Financial Risk Alert System
 
-A multi-stage NLP pipeline that detects financial risks from news articles and generates reliable alerts with extracted organization entities.
+A multi-stage NLP pipeline that detects financial risks from news articles and generates reliable, context-aware alerts with extracted organization entities.
+
+[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue)](https://python.org)
 
 ## 🚀 Features
 
 - **SBERT-based Clickbait Filter**: Discards articles where the headline doesn't match the body using cosine similarity.
-- **FinBERT Risk Classifier**: Fine-tuned on Financial PhraseBank and augmented with Yahoo Finance data (Macro-F1: 0.9656+).
+- **FinBERT Risk Classifier (v2)**: Fine-tuned on Financial PhraseBank and augmented with 51k Yahoo Finance articles, plus domain-adaptive pretraining (DAPT) on 160k+ news articles.
 - **CRF Named Entity Recognition**: Extracts organization names (ORG) from high-risk news using a CRF model trained on CoNLL-2003.
-- **LLM-powered Alert Generation**: Uses GitHub Models (Qwen) to produce natural, context-aware risk alerts without hallucination.
-- **Web Article Parser**: Automatically extracts title and body from news URLs (with fallback to manual input).
+- **LLM-powered Alert Generation**: Uses GitHub Models API (free tier) to produce natural, zero-hallucination alerts with fallback to template.
+- **Web Article Parser**: Automatically extracts title and body from news URLs (CNN, BBC, Reuters, etc.) with manual fallback.
+- **Interactive & Batch Modes**: Run single article demos or batch evaluate system variants.
 
 ## 📦 Installation
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/xuyifei1234/financial-risk-alert-system.git
-   cd financial-risk-alert-system
+   git clone https://github.com/Lucktaken/630project.git
+   cd 630project
    ```
 
-2. Create and activate a virtual environment (recommended):
+2. Create and activate a virtual environment:
    ```bash
    python -m venv venv
    venv\Scripts\activate   # On Windows
@@ -30,40 +33,29 @@ A multi-stage NLP pipeline that detects financial risks from news articles and g
    pip install -r requirements.txt
    ```
 
-4. Set up API keys (optional, for LLM alert generation):
-   - Place your GitHub Personal Access Token in `github_token.txt`
-   - Alternatively, set environment variable `GITHUB_TOKEN`
+4. (Optional) Set up GitHub Models API for LLM alerts:
+   - Place your GitHub Personal Access Token in `github_token.txt`, or
+   - Set the environment variable `GITHUB_TOKEN`.
 
 ## 🧪 Quick Demo
 
-Run the interactive pipeline:
+Run the interactive pipeline with automatic URL parsing or manual input:
 
 ```bash
 python scripts/run_demo.py
 ```
 
-You will be prompted to enter a news URL. The system will automatically extract the content, analyze it, and output a risk alert.
-
-### Sample Output
-
-```bash
-$ python scripts/run_demo.py
-Loading models...
-Models loaded.
-
+**Example session:**
+```text
 Enter news URL (or press Enter to input manually): https://www.cnn.com/2026/04/11/business/high-inflation-rate-problem
 
 ✅ Successfully parsed:
 Title: Uncomfortably high inflation is a real problem and it's not going away anytime soon
-Body (first 200 chars): Here's something no American wants to hear: Prices are surging again, and uncomfortably high inflation could be with us for quite some time.
-
-Inflation has been a thorn in the US economy's side since ...
 
 ============================================================
 RISK ALERT DEMO
 ============================================================
 Title: Uncomfortably high inflation is a real problem and it's not going away anytime soon
-Body: Here's something no American wants to hear: Prices are surging again, and uncomfortably high inflati...
 SBERT Similarity: 0.619 (Passed: True)
 Risk: High Risk (conf: 0.986)
 Alert Triggered: True
@@ -71,7 +63,7 @@ Alert Triggered: True
 ALERT MESSAGE:
 **Risk Alert: High Risk**
 **Confidence: 0.99**
-**Affected Organizations:** Commerce Department, PNC Financial Services Group, CNN, Federal Reserve Chair Jerome Powell, Navy Federal Credit Union, Strait of Hormuz, Purdue University
+**Affected Organizations:** Commerce Department, Federal Reserve, PNC Financial
 
 **Alert:** Uncomfortably high inflation is persisting in the US economy, with prices surging and no immediate resolution in sight. This poses significant risks to the financial stability of the affected organizations.
 ============================================================
@@ -96,9 +88,29 @@ It reuses the trained models and traces representative articles through each sta
 
 In the current curated examples, the clearest observed propagated error is at the denoising stage: a false negative in the SBERT filter prevents the article from reaching classification and therefore causes a missed downstream alert.
 
+## 📊 System Comparison
+
+We provide an end-to-end evaluation script comparing three system configurations on a 50-article 2026 financial news test set:
+
+- **GitHub Models (Qwen)** — general-purpose LLM baseline
+- **Our System (FinBERT v1)** — base modular pipeline
+- **Our System (FinBERT v2 + DAPT)** — domain-pretrained variant with expanded data
+
+Run the comparison:
+
+```bash
+python scripts/compare_systems.py
+```
+
+This will output detailed metrics and generate a bar chart in `assets/system_comparison_bar.png`.
+
+![System Comparison](assets/system_comparison_bar.png)
+
+*Key findings: v2 with DAPT and Yahoo augmentation achieves the highest accuracy, Macro-F1, and ORG F1, validating the benefits of domain adaptation and data diversity.*
+
 ## ⚙️ Configuration
 
-To suppress verbose warnings and progress bars during model loading, the following environment settings are applied in `scripts/run_demo.py`:
+To suppress verbose warnings and progress bars during demos, the following environment settings are applied in the scripts:
 
 ```python
 warnings.filterwarnings("ignore")
@@ -111,55 +123,59 @@ os.environ["TQDM_DISABLE"] = "1"
 os.environ["SENTENCE_TRANSFORMERS_SILENT"] = "1"
 ```
 
-**Please comment out these lines if you encounter any issues with model downloading or loading.**  
-They are intended only for a cleaner demo output and do not affect the underlying functionality.
+**Comment out these lines if you encounter any issues downloading or loading models.** They only affect console output and do not change functionality.
 
 ## 📁 Repository Structure
 
-```
+```text
 .
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
-├── assets/                 # Images and training curves
-├── models/                 # Small serialized models (e.g., CRF)
+├── assets/                     # Figures and training curves
+│   └── system_comparison_bar.png
+├── models/                     # Small serialized models
 │   └── crf_org_extractor.pkl
-├── notebooks/              # Jupyter notebooks for training & experiments
-│   ├── Training.ipynb
-│   └── Pipeline_Error_Analysis.ipynb
+├── notebooks/                  # Jupyter notebooks for training & experiments
 ├── scripts/
-│   ├── run_demo.py         # Interactive demo script
-│   └── evaluate_models.py  # Model comparison script
-└── src/                    # Core Python modules
-    ├── sbert_filter.py
-    ├── finbert_classifier.py
-    ├── crf_extractor.py
-    ├── pipeline.py
-    ├── web_parser.py
-    ├── llm_alert_generator.py
-    └── utils.py
+│   ├── run_demo.py             # Interactive single-article demo
+│   ├── compare_systems.py      # Batch evaluation across system variants
+│   └── download_data.py        # (Optional) dataset download helper
+├── src/                        # Core Python modules
+│   ├── sbert_filter.py
+│   ├── finbert_classifier.py
+│   ├── crf_extractor.py
+│   ├── pipeline.py
+│   ├── web_parser.py
+│   ├── llm_alert_generator.py
+│   └── utils.py
+├── test_articles_2026.json     # 50-article evaluation set (2026 news)
+└── github_token.txt            # (Ignored by git) GitHub API token
 ```
 
 ## 🤖 Models
 
-- **FinBERT Risk Classifier**: Hosted on Hugging Face Hub at [`xuyifei1234/finbert-risk-classifier-v2`](https://huggingface.co/xuyifei1234/finbert-risk-classifier-v2).  
-- **CRF Entity Extractor**: Saved locally in `models/crf_org_extractor.pkl` (small file, included in the repo).  
-- **SBERT**: Uses `all-MiniLM-L6-v2` from sentence-transformers (downloaded automatically).  
-- **LLM Alert Generator**: Uses GitHub Models (Qwen) via free API, with fallback to template-based generation.
+| Component | Model / Path | Description |
+| :--- | :--- | :--- |
+| **Risk Classifier (v2)** | [`xuyifei1234/finbert-risk-classifier-v2`](https://huggingface.co/xuyifei1234/finbert-risk-classifier-v2) | FinBERT + DAPT + Yahoo augmentation (3-class) |
+| **Risk Classifier (v1)** | [`xuyifei1234/finbert-risk-classifier`](https://huggingface.co/xuyifei1234/finbert-risk-classifier) | Baseline FinBERT fine-tuned on PhraseBank only |
+| **CRF Extractor** | `models/crf_org_extractor.pkl` | CRF model trained on CoNLL-2003 (ORG entities) |
+| **SBERT** | `all-MiniLM-L6-v2` | Off-the-shelf sentence transformer (auto-download) |
+| **LLM Alert Generator** | GitHub Models (GPT-4o-mini / Qwen) | Free API, falls back to template on error |
 
-## 📊 Datasets Used
+## 📚 Datasets
 
-The following datasets were used for training/calibration. They are not included in this repository but can be downloaded via the provided scripts or directly from their sources:
+The following datasets were used for training, calibration, and evaluation. They are not included in the repository but are documented with their sources:
 
-- **Webis Clickbait-17** – For SBERT threshold calibration.
-- **Financial PhraseBank** – For fine-tuning FinBERT.
-- **Yahoo Finance News** – Additional training data for improved generalization.
-- **CoNLL-2003** – For training the CRF entity extractor.
-- **CNN / Common Pile News** – For domain-adaptive pretraining (DAPT).
-
-## 📄 License
-
-This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
+| Dataset | Task | Size (approx.) | Source |
+| :--- | :--- | :--- | :--- |
+| Financial PhraseBank | Risk Classification | 4,840 sentences | [Hugging Face](https://huggingface.co/datasets/financial_phrasebank) |
+| Yahoo Finance News | Risk Classification (augmentation) | 51,272 articles | [GitHub](https://github.com/FelixDrinkall/financial-news-dataset) |
+| Webis-Clickbait-17 | Denoising (calibration) | 38,517 pairs | [Zenodo](https://zenodo.org/record/5530410) |
+| CoNLL-2003 | Event Extraction (NER) | 300k+ tokens | [Hugging Face](https://huggingface.co/datasets/conll2003) |
+| CNN / Common Pile News | Domain-Adaptive Pretraining | 160,000+ articles | [CNN](https://huggingface.co/datasets/AyoubChLin/CNN_News_Articles_2011-2022) / [Common Pile](https://huggingface.co/datasets/common-pile/news_filtered) |
+| NewsAPI Stream | Real-time Inference | 500 articles (sampled) | [NewsAPI](https://newsapi.org/) |
+| 2026 Test Set (manual) | End-to-end evaluation | 50 articles | Included as `test_articles_2026.json` |
 
 ## 🙏 Acknowledgements
 
@@ -168,3 +184,4 @@ This project is licensed under the MIT License – see the [LICENSE](LICENSE) fi
 - [sklearn-crfsuite](https://github.com/TeamHG-Memex/sklearn-crfsuite)
 - [newspaper3k](https://github.com/codelucas/newspaper)
 - [GitHub Models](https://github.com/marketplace/models)
+- Financial PhraseBank, Yahoo Finance News, Webis-Clickbait-17, CoNLL-2003

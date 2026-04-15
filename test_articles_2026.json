@@ -1,0 +1,394 @@
+[
+  {
+    "source": "CNN",
+    "date": "2026-04-11",
+    "title": "Uncomfortably high inflation is a real problem and it's not going away anytime soon",
+    "body": "Here's something no American wants to hear: Prices are surging again, and uncomfortably high inflation could be with us for quite some time. Inflation has been a thorn in the US economy's side since early 2025, and the latest data shows the Consumer Price Index rising 4.2% year-over-year in March, up from 3.8% in February. Core inflation, which strips out volatile food and energy prices, remains sticky at 3.9%. The Federal Reserve faces a dilemma: keep rates high to fight inflation or cut them to support a slowing labor market.",
+    "true_risk": "High Risk",
+    "true_orgs": ["Commerce Department", "Federal Reserve"]
+  },
+  {
+    "source": "Reuters",
+    "date": "2026-03-28",
+    "title": "Tesla to lay off 15% of global workforce as EV demand softens",
+    "body": "Tesla is cutting about 15% of its global workforce, according to an internal memo seen by Reuters, as the electric vehicle maker grapples with slowing demand and intensifying competition from Chinese rivals. The layoffs, which could affect over 20,000 employees, come after Tesla reported its first annual sales decline in 2025. CEO Elon Musk said the company needs to 'streamline operations and reduce costs' to prepare for the next growth phase. Shares fell 6% in after-hours trading.",
+    "true_risk": "High Risk",
+    "true_orgs": ["Tesla"]
+  },
+  {
+    "source": "CNBC",
+    "date": "2026-04-09",
+    "title": "Pfizer raises full-year profit forecast on strong cancer drug sales",
+    "body": "Pfizer on Wednesday raised its annual earnings guidance, citing robust demand for its oncology portfolio and better-than-expected sales of its new weight-loss pill. The drugmaker now expects adjusted earnings per share of $3.40 to $3.60, up from its prior range of $3.10 to $3.40. Shares rose 4% in premarket trading. CEO Albert Bourla said the company's pipeline of cancer and metabolic disease drugs positions it well for sustained growth.",
+    "true_risk": "Low Risk",
+    "true_orgs": ["Pfizer"]
+  },
+  {
+    "source": "BBC News",
+    "date": "2026-04-12",
+    "title": "JPMorgan Chase profits surge as investment banking rebounds",
+    "body": "JPMorgan Chase reported a 22% jump in first-quarter profit on Friday, driven by a resurgence in dealmaking and strong performance in its consumer banking division. Net income rose to $16.2 billion, easily beating analyst estimates. CEO Jamie Dimon said the US economy remains resilient, but warned that geopolitical tensions in the Middle East and ongoing inflation pose 'significant risks' to the outlook. The bank's shares gained 2% in early trading.",
+    "true_risk": "Low Risk",
+    "true_orgs": ["JPMorgan Chase"]
+  },
+  {
+    "source": "CNN",
+    "date": "2026-02-15",
+    "title": "Microsoft announces $15 billion AI infrastructure investment in Germany",
+    "body": "Microsoft said it will invest 15 billion euros over the next five years to build new AI data centers in Germany, expanding its cloud footprint in Europe's largest economy. The move is part of the tech giant's broader strategy to meet soaring demand for artificial intelligence services. The investment includes plans for two new data center regions and a training program for over 1.2 million Germans in digital skills. Microsoft shares were flat on the news.",
+    "true_risk": "Low Risk",
+    "true_orgs": ["Microsoft"]
+  },
+  {
+    "source": "Reuters",
+    "date": "2026-04-08",
+    "title": "Boeing faces new FAA probe over 787 Dreamliner quality issues",
+    "body": "The Federal Aviation Administration has opened a new investigation into Boeing's 787 Dreamliner production after the company disclosed that some fuselage sections may have been improperly assembled. The investigation adds to Boeing's ongoing regulatory woes following the 737 MAX crashes and subsequent safety scandals. Boeing said it is cooperating fully with the FAA and has paused deliveries of affected aircraft. Shares dropped 5% on the news.",
+    "true_risk": "High Risk",
+    "true_orgs": ["Boeing", "FAA"]
+  },
+  {
+    "source": "CNBC",
+    "date": "2026-03-20",
+    "title": "Disney streaming business turns profit for first time",
+    "body": "Walt Disney's streaming division, which includes Disney+, Hulu, and ESPN+, reported its first quarterly operating profit since launching, helped by recent subscription price increases and cost-cutting measures. The company added 7 million Disney+ subscribers in the quarter, beating expectations. CEO Bob Iger said the milestone marks a 'turning point' for the streaming business. Disney shares rose 3% in extended trading.",
+    "true_risk": "Low Risk",
+    "true_orgs": ["Disney"]
+  },
+  {
+    "source": "BBC News",
+    "date": "2026-02-28",
+    "title": "Goldman Sachs plans hundreds of job cuts as dealmaking slumps",
+    "body": "Goldman Sachs is planning to cut several hundred jobs across its investment banking and trading divisions, sources told the BBC, as a prolonged drought in mergers and acquisitions continues to weigh on revenue. The cuts, which could be announced as early as next month, are part of the bank's annual performance review process. A Goldman spokesperson declined to comment. The bank's shares have underperformed rivals this year.",
+    "true_risk": "High Risk",
+    "true_orgs": ["Goldman Sachs"]
+  },
+  {
+    "source": "Reuters",
+    "date": "2026-04-03",
+    "title": "Foxconn raises outlook on strong AI server demand",
+    "body": "Foxconn, the world's largest contract electronics manufacturer and a key Apple supplier, raised its full-year revenue guidance on Wednesday, citing surging demand for AI servers and networking equipment. The Taiwanese company now expects revenue growth of 15-20% this year, up from its previous forecast of 10-15%. Foxconn's shares jumped 5% in Taipei trading, lifting shares of other AI-related hardware makers.",
+    "true_risk": "Low Risk",
+    "true_orgs": ["Apple", "Foxconn"]
+  },
+  {
+    "source": "CNN",
+    "date": "2026-01-19",
+    "title": "Chevron warns of $1.5 billion charge on Australian LNG asset sale",
+    "body": "Chevron said it will record a non-cash charge of up to $1.5 billion in the fourth quarter related to the sale of its stake in an Australian liquefied natural gas project. The energy giant cited higher-than-expected decommissioning costs and unfavorable currency movements. The charge will reduce reported earnings but does not affect cash flow. Chevron shares fell 1.5% in after-hours trading.",
+    "true_risk": "Neutral",
+    "true_orgs": ["Chevron"]
+  },
+  {
+    "source": "CNBC",
+    "date": "2026-03-11",
+    "title": "Netflix ad-supported tier hits 80 million monthly active users",
+    "body": "Netflix announced that its ad-supported subscription plan has surpassed 80 million monthly active users globally, doubling from a year ago. The company is expanding its ad tech capabilities and expects advertising to become a significant revenue stream by 2027. Co-CEO Greg Peters said the ad tier is 'scaling faster than we anticipated.' Netflix shares rose 2% on the news.",
+    "true_risk": "Low Risk",
+    "true_orgs": ["Netflix"]
+  },
+  {
+    "source": "BBC News",
+    "date": "2026-03-05",
+    "title": "Credit Suisse bondholders sue Swiss government over $17 billion writedown",
+    "body": "A group of Credit Suisse bondholders has filed a class-action lawsuit against the Swiss government, challenging the write-down of $17 billion in Additional Tier 1 bonds during the bank's emergency takeover by UBS in 2023. The lawsuit, filed in a US federal court, alleges that Swiss authorities violated property rights and due process. The case could set a precedent for future bank bailouts. UBS declined to comment.",
+    "true_risk": "High Risk",
+    "true_orgs": ["Credit Suisse", "UBS"]
+  },
+  {
+    "source": "Reuters",
+    "date": "2026-02-07",
+    "title": "Starbucks same-store sales decline for fifth straight quarter",
+    "body": "Starbucks reported a 4% drop in global same-store sales, marking the fifth consecutive quarter of declines, as traffic weakened in the US and China. The coffee chain is revamping its menu and mobile app to win back customers, and CEO Brian Niccol said the turnaround will take 'several quarters.' Starbucks shares fell 3% in after-hours trading.",
+    "true_risk": "Neutral",
+    "true_orgs": ["Starbucks"]
+  },
+  {
+    "source": "CNBC",
+    "date": "2026-01-25",
+    "title": "Eli Lilly Alzheimer's drug wins expanded Medicare coverage",
+    "body": "The Centers for Medicare and Medicaid Services said it will expand coverage for Eli Lilly's Alzheimer's treatment donanemab, removing a key barrier to patient access. The decision could open up a multibillion-dollar market for the drugmaker. Eli Lilly shares rose 6% on the news, adding to gains from its blockbuster weight-loss drug portfolio.",
+    "true_risk": "Low Risk",
+    "true_orgs": ["Eli Lilly"]
+  },
+  {
+    "source": "CNN",
+    "date": "2026-04-01",
+    "title": "ExxonMobil faces $5 billion lawsuit over plastics pollution deception",
+    "body": "California's attorney general filed a $5 billion lawsuit against ExxonMobil on Monday, alleging the oil giant misled the public for decades about the recyclability of plastics. The lawsuit claims ExxonMobil's 'deceptive marketing' contributed to a global plastic pollution crisis. ExxonMobil called the suit 'meritless' and vowed to fight it in court. Shares dipped 1% on the news.",
+    "true_risk": "High Risk",
+    "true_orgs": ["ExxonMobil"]
+  },
+  {
+    "source": "BBC News",
+    "date": "2026-02-14",
+    "title": "Novo Nordisk cuts Wegovy prices amid competition from Eli Lilly",
+    "body": "Novo Nordisk said it will lower the US list price of its blockbuster weight-loss drug Wegovy by up to 30% as competition intensifies from Eli Lilly's Zepbound. The Danish drugmaker also lowered its full-year profit outlook, citing pricing pressure and supply chain constraints. Shares plunged 12% in Copenhagen trading, dragging down European healthcare stocks.",
+    "true_risk": "High Risk",
+    "true_orgs": ["Novo Nordisk", "Eli Lilly"]
+  },
+  {
+    "source": "Reuters",
+    "date": "2026-03-17",
+    "title": "Walmart raises full-year forecast on strong consumer spending",
+    "body": "Walmart raised its annual sales and profit forecast on Tuesday, betting that easing inflation and a resilient job market will keep shoppers spending at its stores. The retail giant now expects net sales to rise 4-5% this fiscal year, up from its previous forecast of 3-4%. Walmart shares rose 2% in premarket trading. CEO Doug McMillon said the US consumer 'remains in good shape.'",
+    "true_risk": "Low Risk",
+    "true_orgs": ["Walmart"]
+  },
+  {
+    "source": "CNBC",
+    "date": "2026-01-30",
+    "title": "Amazon Web Services growth slows as clients optimize cloud spend",
+    "body": "Amazon Web Services, the company's lucrative cloud division, reported its slowest revenue growth in five years as enterprise customers continued to trim their cloud budgets. AWS revenue rose 13% year-over-year in the fourth quarter, missing analyst estimates. Amazon shares fell 4% in extended trading, though CEO Andy Jassy said the company remains 'very optimistic' about AWS's long-term prospects.",
+    "true_risk": "Neutral",
+    "true_orgs": ["Amazon"]
+  },
+  {
+    "source": "CNN",
+    "date": "2026-02-21",
+    "title": "Berkshire Hathaway's cash pile swells to record $350 billion",
+    "body": "Warren Buffett's Berkshire Hathaway said its cash hoard reached a record $350 billion in the fourth quarter as the conglomerate struggled to find attractive acquisition targets. The Omaha-based company also reported a 28% jump in operating earnings, driven by strong performance in its insurance and railroad businesses. Buffett, in his annual letter, said 'the game of finding wonderful businesses at fair prices has become harder than ever.'",
+    "true_risk": "Neutral",
+    "true_orgs": ["Berkshire Hathaway"]
+  },
+  {
+    "source": "BBC News",
+    "date": "2026-04-06",
+    "title": "UK firms raise prices at fastest pace in two years, survey shows",
+    "body": "British businesses increased prices at the fastest rate since early 2024 last month, according to a closely watched survey, adding to concerns that inflationary pressures are building again in the UK economy. The British Chambers of Commerce said its survey of over 5,000 firms showed a 'worrying uptick' in pricing intentions, particularly in the services sector. The pound strengthened against the dollar as markets bet on a more hawkish Bank of England.",
+    "true_risk": "High Risk",
+    "true_orgs": ["Bank of England"]
+  },
+  {
+    "source": "Reuters",
+    "date": "2026-03-08",
+    "title": "Nvidia unveils next-generation AI chip, shares hit record high",
+    "body": "Nvidia on Monday unveiled its next-generation artificial intelligence chip, the Blackwell Ultra, which it says delivers a 50% performance boost over its predecessor. CEO Jensen Huang said the new chip will 'fuel the next wave of AI innovation' and announced partnerships with all major cloud providers. Nvidia shares jumped 7% to a record high, extending its market capitalization lead over Apple and Microsoft.",
+    "true_risk": "Low Risk",
+    "true_orgs": ["Nvidia"]
+  },
+  {
+    "source": "CNBC",
+    "date": "2026-01-12",
+    "title": "BlackRock assets top $12 trillion as ETF inflows surge",
+    "body": "BlackRock, the world's largest asset manager, reported that its assets under management exceeded $12 trillion for the first time, driven by record inflows into its iShares exchange-traded funds. The firm posted better-than-expected quarterly earnings, and CEO Larry Fink said the company is 'well positioned' to benefit from the shift to private markets and AI-driven investing. Shares rose 3%.",
+    "true_risk": "Low Risk",
+    "true_orgs": ["BlackRock"]
+  },
+  {
+    "source": "CNN",
+    "date": "2026-02-09",
+    "title": "Spirit Airlines files for bankruptcy protection again",
+    "body": "Spirit Airlines filed for Chapter 11 bankruptcy protection on Sunday, marking the second time the low-cost carrier has sought court protection in less than two years. The airline cited mounting debt, engine recall issues, and intense fare competition. Spirit said it will continue normal operations during the restructuring and expects to emerge from bankruptcy 'as quickly as possible.' Shares were halted.",
+    "true_risk": "High Risk",
+    "true_orgs": ["Spirit Airlines"]
+  },
+  {
+    "source": "BBC News",
+    "date": "2026-03-25",
+    "title": "FTSE 100 hits record high as miners and banks rally",
+    "body": "The UK's FTSE 100 index closed at a record high on Tuesday, lifted by strong gains in mining and banking stocks. Investors cheered signs of stabilization in China's property sector and ongoing hopes for interest rate cuts from the Bank of England. The blue-chip index has risen over 8% so far this year, outperforming European and US peers.",
+    "true_risk": "Low Risk",
+    "true_orgs": []
+  },
+  {
+    "source": "Reuters",
+    "date": "2026-04-02",
+    "title": "Oil prices surge above $100 as US-Iran talks stall",
+    "body": "Oil prices jumped above $100 a barrel on Wednesday after negotiations between the US and Iran over Tehran's nuclear program ended without a deal, raising fears of renewed sanctions and potential supply disruptions. Brent crude futures hit $102.50 a barrel, the highest since 2024. Analysts warned that a prolonged standoff could push prices even higher, adding to global inflationary pressures.",
+    "true_risk": "High Risk",
+    "true_orgs": []
+  },
+  {
+    "source": "CNBC",
+    "date": "2026-01-22",
+    "title": "Comcast to spin off cable networks into separate company",
+    "body": "Comcast said it will spin off most of its cable television networks, including MSNBC and CNBC, into a separate publicly traded company as it focuses on streaming and broadband. The new company, tentatively named 'SpinCo,' will house assets that generate about $7 billion in annual revenue. Comcast shares rose 2% on the news, as investors welcomed the move to streamline the business.",
+    "true_risk": "Neutral",
+    "true_orgs": ["Comcast"]
+  },
+  {
+    "source": "CNN",
+    "date": "2026-03-14",
+    "title": "Apple iPhone sales in China rebound after price cuts",
+    "body": "Apple's iPhone sales in China surged 12% in the first quarter of 2026, according to government data, as aggressive price cuts helped the tech giant regain ground lost to local rivals. The rebound follows a difficult 2025 when Apple's China revenue fell sharply amid intense competition from Huawei and Xiaomi. Apple shares rose 1.5% on the news.",
+    "true_risk": "Low Risk",
+    "true_orgs": ["Apple"]
+  },
+  {
+    "source": "BBC News",
+    "date": "2026-02-11",
+    "title": "EU slaps $2 billion fine on Meta over data privacy breaches",
+    "body": "The European Union has fined Meta $2 billion for violating the bloc's strict data privacy rules, the latest in a series of penalties against the Facebook parent. Regulators said Meta improperly transferred user data from Europe to the US without adequate safeguards. Meta said it will appeal the decision, calling it 'flawed and disproportionate.' Shares dipped 1%.",
+    "true_risk": "High Risk",
+    "true_orgs": ["Meta"]
+  },
+  {
+    "source": "Reuters",
+    "date": "2026-04-13",
+    "title": "Gold prices retreat from record high as dollar strengthens",
+    "body": "Gold prices fell 1.5% on Monday, pulling back from last week's record high above $2,800 an ounce, as the US dollar strengthened on safe-haven demand amid Middle East tensions. Despite the dip, analysts remain bullish on gold, citing continued central bank buying and expectations of Fed rate cuts later this year. Silver and platinum also declined.",
+    "true_risk": "Neutral",
+    "true_orgs": []
+  },
+  {
+    "source": "CNBC",
+    "date": "2026-02-26",
+    "title": "Coca-Cola raises prices again as aluminum costs climb",
+    "body": "Coca-Cola said it will implement another round of price increases on its soft drinks this spring, citing higher costs for aluminum cans and sweeteners. The beverage giant reported better-than-expected quarterly earnings, but warned that input costs remain 'stubbornly high.' CEO James Quincey said consumers have so far absorbed the price hikes without significantly cutting back on purchases.",
+    "true_risk": "Neutral",
+    "true_orgs": ["Coca-Cola"]
+  },
+  {
+    "source": "BBC News",
+    "date": "2026-03-01",
+    "title": "Nissan shares plunge on report of failed Honda merger talks",
+    "body": "Nissan shares tumbled 8% on Monday after a report that merger talks with Honda have collapsed due to disagreements over governance and brand strategy. The two Japanese automakers had been exploring a tie-up to better compete in the electric vehicle race against Tesla and Chinese rivals. Both companies declined to comment on the report.",
+    "true_risk": "High Risk",
+    "true_orgs": ["Nissan", "Honda"]
+  },
+  {
+    "source": "Reuters",
+    "date": "2026-04-07",
+    "title": "McDonald's global same-store sales beat estimates on value menu push",
+    "body": "McDonald's reported better-than-expected first-quarter same-store sales on Tuesday, as its renewed focus on value meals and digital promotions lured inflation-weary customers back to its restaurants. Global comparable sales rose 4.2%, beating the 3.5% estimate. US sales were particularly strong, driven by the $5 Meal Deal. Shares rose 2% in premarket trading.",
+    "true_risk": "Low Risk",
+    "true_orgs": ["McDonald's"]
+  },
+  {
+    "source": "CNN",
+    "date": "2026-01-15",
+    "title": "Boeing CEO to step down as safety crisis deepens",
+    "body": "Boeing CEO Dave Calhoun will step down at the end of the year, the company announced Monday, as the planemaker grapples with a widening safety crisis following a series of high-profile incidents involving its 737 MAX and 787 Dreamliner jets. Board chair Larry Kellner will also leave. Boeing shares rose 3% on the leadership shake-up, though the company faces an uncertain path to restoring its reputation.",
+    "true_risk": "High Risk",
+    "true_orgs": ["Boeing"]
+  },
+  {
+    "source": "CNBC",
+    "date": "2026-02-18",
+    "title": "S&P 500 hits new milestone as AI rally powers on",
+    "body": "The S&P 500 closed above 7,000 for the first time on Tuesday, extending its remarkable bull run as investors bet that artificial intelligence will continue to fuel corporate earnings growth. The index has gained over 15% so far this year, led by megacap tech stocks like Nvidia, Microsoft, and Alphabet. Some strategists warn that valuations are stretched, but momentum remains strong.",
+    "true_risk": "Low Risk",
+    "true_orgs": ["Nvidia", "Microsoft", "Alphabet"]
+  },
+  {
+    "source": "BBC News",
+    "date": "2026-03-23",
+    "title": "Japan's economy dodges recession as consumption picks up",
+    "body": "Japan's economy expanded at an annualized rate of 2.1% in the fourth quarter, revised government data showed Monday, narrowly avoiding a technical recession. The upward revision was driven by stronger-than-expected consumer spending and business investment. The yen strengthened against the dollar on expectations that the Bank of Japan may raise interest rates further this year.",
+    "true_risk": "Low Risk",
+    "true_orgs": []
+  },
+  {
+    "source": "Reuters",
+    "date": "2026-04-04",
+    "title": "Meta unveils plan to weave AI into all its apps",
+    "body": "Meta CEO Mark Zuckerberg on Friday outlined an ambitious plan to integrate advanced AI assistants across all of the company's apps, including Facebook, Instagram, and WhatsApp. The move is part of Meta's strategy to become 'the world's leading AI platform,' Zuckerberg said. The company also announced a new $20 billion share buyback program, sending shares up 4%.",
+    "true_risk": "Low Risk",
+    "true_orgs": ["Meta"]
+  },
+  {
+    "source": "CNN",
+    "date": "2026-01-08",
+    "title": "GM to invest $8 billion in US battery plants amid EV push",
+    "body": "General Motors said it will invest $8 billion in two new US battery manufacturing plants as the automaker accelerates its electric vehicle ambitions. The investment, part of a joint venture with LG Energy Solution, will create over 5,000 jobs and help GM meet its goal of selling 2 million EVs annually by 2030. GM shares rose 1% on the news.",
+    "true_risk": "Low Risk",
+    "true_orgs": ["General Motors", "LG Energy Solution"]
+  },
+  {
+    "source": "CNBC",
+    "date": "2026-02-06",
+    "title": "PayPal beats earnings estimates, announces $5 billion buyback",
+    "body": "PayPal reported better-than-expected fourth-quarter earnings on Tuesday, driven by strong growth in its branded checkout and Venmo businesses. The payments giant also announced a new $5 billion share repurchase program. CEO Alex Chriss said the company is 'making steady progress' on its turnaround plan. Shares rose 6% in extended trading.",
+    "true_risk": "Low Risk",
+    "true_orgs": ["PayPal"]
+  },
+  {
+    "source": "BBC News",
+    "date": "2026-03-13",
+    "title": "Adidas warns of profit hit as US tariffs weigh",
+    "body": "Adidas warned that its 2026 operating profit could be reduced by up to 500 million euros due to higher US tariffs on goods imported from China and Vietnam. The German sportswear giant said it is working to diversify its supply chain but expects the tariff impact to persist through the year. Shares fell 4% in Frankfurt trading.",
+    "true_risk": "High Risk",
+    "true_orgs": ["Adidas"]
+  },
+  {
+    "source": "Reuters",
+    "date": "2026-01-17",
+    "title": "Bank of America profit rises on trading strength",
+    "body": "Bank of America reported a 10% rise in fourth-quarter profit on Friday, as strong results from its trading and investment banking divisions offset a decline in net interest income. CEO Brian Moynihan said the US consumer remains 'healthy' and the economy is on track for a soft landing. Shares rose 1.5%.",
+    "true_risk": "Low Risk",
+    "true_orgs": ["Bank of America"]
+  },
+  {
+    "source": "CNN",
+    "date": "2026-04-14",
+    "title": "Intel shares jump on report of potential TSMC joint venture",
+    "body": "Intel shares surged 9% on Monday after a report that the chipmaker is in talks with Taiwan's TSMC to form a joint venture that would operate Intel's US manufacturing plants. The potential deal, if finalized, would be a major step in Intel's turnaround strategy and could help it compete more effectively with rivals like AMD and Nvidia. Neither company commented on the report.",
+    "true_risk": "Low Risk",
+    "true_orgs": ["Intel", "TSMC"]
+  },
+  {
+    "source": "CNBC",
+    "date": "2026-03-09",
+    "title": "Ford slashes prices on Mustang Mach-E as EV price war heats up",
+    "body": "Ford Motor is cutting prices on its Mustang Mach-E electric SUV by up to $8,000, intensifying a price war in the US EV market. The move follows similar cuts by Tesla and General Motors as automakers battle for market share amid slowing demand growth. Ford said the price reductions are 'part of our commitment to making EVs more accessible.' Shares fell 2%.",
+    "true_risk": "Neutral",
+    "true_orgs": ["Ford"]
+  },
+  {
+    "source": "BBC News",
+    "date": "2026-01-31",
+    "title": "Spotify beats subscriber targets, shares surge",
+    "body": "Spotify reported fourth-quarter results that beat analyst expectations on Tuesday, adding 15 million premium subscribers to reach a total of 280 million. The music streaming giant also posted its first full-year operating profit since going public. CEO Daniel Ek said the company is 'entering a new phase of profitable growth.' Shares jumped 12%.",
+    "true_risk": "Low Risk",
+    "true_orgs": ["Spotify"]
+  },
+  {
+    "source": "Reuters",
+    "date": "2026-02-22",
+    "title": "Oracle rides AI demand to post strong quarterly results",
+    "body": "Oracle reported better-than-expected quarterly revenue and profit on Thursday, driven by robust demand for its cloud services from AI companies. The enterprise software giant also announced a new partnership with Nvidia to offer accelerated computing capabilities to its customers. Oracle shares rose 5% in extended trading.",
+    "true_risk": "Low Risk",
+    "true_orgs": ["Oracle", "Nvidia"]
+  },
+  {
+    "source": "CNN",
+    "date": "2026-03-07",
+    "title": "H&M shares sink on weaker-than-expected sales",
+    "body": "H&M shares tumbled 7% on Friday after the Swedish fashion retailer reported first-quarter sales that missed analyst estimates, citing unseasonably cold weather and weak consumer confidence in key European markets. CEO Daniel Ervér said the company is 'not satisfied' with the performance and will accelerate its cost-cutting program.",
+    "true_risk": "High Risk",
+    "true_orgs": ["H&M"]
+  },
+  {
+    "source": "CNBC",
+    "date": "2026-04-11",
+    "title": "Chipotle stock pops as turnaround plan shows early results",
+    "body": "Chipotle Mexican Grill shares rose 8% on Friday after the fast-casual chain reported better-than-expected same-store sales growth and said its turnaround plan is gaining traction. CEO Scott Boatwright, who took over last year, has focused on improving throughput, marketing, and menu innovation. The company also announced a $1 billion share buyback.",
+    "true_risk": "Low Risk",
+    "true_orgs": ["Chipotle"]
+  },
+  {
+    "source": "BBC News",
+    "date": "2026-02-17",
+    "title": "Zara owner Inditex reports record profit",
+    "body": "Inditex, the world's largest fashion retailer and owner of Zara, reported a record annual profit of 6.2 billion euros on Monday, driven by strong sales growth across all its brands and geographies. The Spanish company said its online and store integration strategy continues to pay off. Shares rose 3% in Madrid.",
+    "true_risk": "Low Risk",
+    "true_orgs": ["Inditex"]
+  },
+  {
+    "source": "Reuters",
+    "date": "2026-01-21",
+    "title": "UPS to cut 12,000 jobs as delivery demand softens",
+    "body": "United Parcel Service said it will cut about 12,000 jobs, or 2.4% of its global workforce, as the package delivery giant grapples with softer demand and higher labor costs. The job cuts, which will primarily affect management and contract workers, are expected to save $1 billion annually. UPS shares fell 4% on the news.",
+    "true_risk": "High Risk",
+    "true_orgs": ["UPS"]
+  },
+  {
+    "source": "CNN",
+    "date": "2026-03-30",
+    "title": "Airbnb outlook disappoints as travel demand moderates",
+    "body": "Airbnb forecast second-quarter revenue below Wall Street estimates on Thursday, signaling that travel demand is moderating after a post-pandemic boom. The vacation rental platform cited 'some signs of slowing' in North America, its largest market. Airbnb shares fell 6% in after-hours trading.",
+    "true_risk": "Neutral",
+    "true_orgs": ["Airbnb"]
+  }
+]
