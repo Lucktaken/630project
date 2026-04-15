@@ -69,6 +69,25 @@ ALERT MESSAGE:
 ============================================================
 ```
 
+## 📓 Notebooks
+
+This repository now includes two notebooks:
+
+- `notebooks/Training.ipynb` - training and experimentation for the individual models
+- `notebooks/Pipeline_Error_Analysis.ipynb` - end-to-end system architecture and pipeline error analysis without retraining
+
+The new error-analysis notebook documents the deployed pipeline:
+
+`raw news -> denoising -> classification -> NER -> alert template`
+
+It reuses the trained models and traces representative articles through each stage to answer practical system questions such as:
+
+- Does a denoising mistake suppress a valid alert before classification?
+- Does a classifier error create a false alert or a missed alert?
+- Does an NER failure degrade the final alert by missing affected organizations?
+
+In the current curated examples, the clearest observed propagated error is at the denoising stage: a false negative in the SBERT filter prevents the article from reaching classification and therefore causes a missed downstream alert.
+
 ## 📊 System Comparison
 
 We provide an end-to-end evaluation script comparing three system configurations on a 50-article 2026 financial news test set:
