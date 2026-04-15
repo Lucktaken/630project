@@ -2,7 +2,6 @@
 
 A multi-stage NLP pipeline that detects financial risks from news articles and generates reliable, context-aware alerts with extracted organization entities.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue)](https://python.org)
 
 ## 🚀 Features
