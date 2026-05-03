@@ -17,8 +17,8 @@ A multi-stage NLP pipeline that detects financial risks from news articles and g
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Lucktaken/630project.git
-   cd 630project
+   git clone https://github.com/Lucktaken/RiskBERT.git
+   cd RiskBERT
    ```
 
 2. Create and activate a virtual environment:
